@@ -6,14 +6,14 @@
 #include "SweepMineGameModeBase.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class SWEEPMINE_API ASweepMineGameModeBase : public AGameModeBase
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
+
+public:
+    ASweepMineGameModeBase();
+
 };

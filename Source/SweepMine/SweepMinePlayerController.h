@@ -6,14 +6,22 @@
 #include "SweepMinePlayerController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class SWEEPMINE_API ASweepMinePlayerController : public APlayerController
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
+
+public:
+    ASweepMinePlayerController(); 
+
+    UFUNCTION()
+        void OnLeftMouseButtonClicked();
+
+    UFUNCTION()
+        void OnRightMouseButtonClicked();
+
+protected:
+    virtual void SetupInputComponent() override;
 };
